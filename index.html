@@ -9,5 +9,64 @@
         <h2> Ik ben felah etc...., </h2>
         
         <a href="binairstelsel.html"> infortmatien </a>
+        <!-- Dropdown menu -->
+<div style="position: relative; display: inline-block; font-family: Arial, sans-serif;">
+
+  <button onclick="toggleDropdown()" 
+          style="background-color: #2563eb; color: white; padding: 12px 20px; 
+                 border: none; border-radius: 8px; cursor: pointer; font-size: 16px;">
+    Menu ▾
+  </button>
+
+  <div id="dropdownMenu" 
+       style="display: none; position: absolute; top: 100%; left: 0; 
+              background-color: white; min-width: 180px; 
+              box-shadow: 0 8px 16px rgba(0,0,0,0.15); 
+              border-radius: 8px; margin-top: 6px; overflow: hidden; 
+              z-index: 1000;">
+
+    <a href="index.html" 
+       style="display: block; padding: 12px 16px; color: #333; 
+              text-decoration: none;">
+      Home
+    </a>
+
+    <a href="over-ons.html" 
+       style="display: block; padding: 12px 16px; color: #333; 
+              text-decoration: none;">
+      Over ons
+    </a>
+
+    <a href="contact.html" 
+       style="display: block; padding: 12px 16px; color: #333; 
+              text-decoration: none;">
+      Contact
+    </a>
+
+  </div>
+</div>
+
+<script>
+function toggleDropdown() {
+  const menu = document.getElementById("dropdownMenu");
+
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+
+// Sluit het menu als je ergens anders klikt
+document.addEventListener("click", function(event) {
+  const dropdown = event.target.closest("#dropdownMenu");
+  const button = event.target.closest("button");
+
+  if (!dropdown && !button) {
+    document.getElementById("dropdownMenu").style.display = "none";
+  }
+});
+</script>
+
     </body>
 </html>
