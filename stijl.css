@@ -1,1 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  /* Achtergrond */
+  background: #0f172a;
+
+  /* Tekst */
+  color: #f8fafc;
+
+  /* Lettertype */
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+
+  /* Layout */
+  min-height: 100vh;
+
+  /* Mooie overgang */
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+
+/* Hoofdtitel */
+h1 {
+  margin: 0 0 20px;
+  font-size: 42px;
+  font-weight: 700;
+  color: #38bdf8;
+}
+
+
+/* Subtitels */
+h2 {
+  margin-top: 30px;
+  color: #60a5fa;
+}
+
+
+/* Normale tekst */
+p {
+  color: #cbd5e1;
+}
+
+
+/* Links */
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #7dd3fc;
+}
+
+
+/* Knoppen */
+button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+
+/* Kaarten */
+.card {
+  padding: 25px;
+  margin: 20px 0;
+
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Invoervelden */
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px 14px;
+  margin: 8px 0 16px;
+
+  background: #1e293b;
+  color: #f8fafc;
+
+  border: 1px solid #475569;
+  border-radius: 10px;
+
+  font-size: 15px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+
+/* Container */
+.container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+  padding: 40px 0;
+}
 
