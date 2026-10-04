@@ -118,27 +118,36 @@
    TEKSTVAK
    ================================ */
 
-.jari-card {
+   .jari-card {
   max-width: 680px;
-  margin: auto;
-  padding: 35px;
-  background: white;
-  border-radius: 15px;
-  border-top: 5px solid #650014;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-  text-align: left;
+  margin: 0 auto;
+  padding: 25px 10px;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  text-align: center;
 }
 
 .jari-card h2 {
-  color: #a50022;
   margin-top: 0;
+  color: white;
   font-size: 28px;
+  margin-bottom: 15px;
 }
 
 .jari-card p {
-  color: #444;
+  color: white;
   font-size: 16px;
   line-height: 1.8;
+  margin-bottom: 0;
+}
+
+.jari-line {
+  width: 60px;
+  height: 4px;
+  background: white;
+  margin: 0 auto 22px auto;
+  border-radius: 5px;
 }
 
 
