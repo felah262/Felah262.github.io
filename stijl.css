@@ -1,127 +1,182 @@
-body {
-  margin: 0;
-  padding: 0;
 
-  /* Achtergrond */
-  background: #0f172a;
+body{ <style>
+/* ================================
+   JARI LITMANEN - OPMAAK
+   ================================ */
 
-  /* Tekst */
-  color: #f8fafc;
-
-  /* Lettertype */
+.jari-site {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-
-  /* Layout */
   min-height: 100vh;
-
-  /* Mooie overgang */
-  transition: background 0.3s ease, color 0.3s ease;
+  background: linear-gradient(135deg, #780018, #c8102e, #8b001c);
+  color: #222;
+  padding-bottom: 60px;
 }
 
-
-/* Hoofdtitel */
-h1 {
-  margin: 0 0 20px;
-  font-size: 42px;
-  font-weight: 700;
-  color: #38bdf8;
-}
-
-
-/* Subtitels */
-h2 {
-  margin-top: 30px;
-  color: #60a5fa;
-}
-
-
-/* Normale tekst */
-p {
-  color: #cbd5e1;
-}
-
-
-/* Links */
-a {
-  color: #38bdf8;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-a:hover {
-  color: #7dd3fc;
-}
-
-
-/* Knoppen */
-button {
-  padding: 12px 22px;
-  border: none;
-  border-radius: 10px;
-
-  background: #2563eb;
-  color: white;
-
-  font-size: 16px;
-  font-weight: 600;
-
-  cursor: pointer;
-  transition: all 0.2s ease;
-}
-
-button:hover {
-  background: #1d4ed8;
-  transform: translateY(-2px);
-}
-
-
-/* Kaarten */
-.card {
-  padding: 25px;
-  margin: 20px 0;
-
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 16px;
-
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-
-/* Invoervelden */
-input,
-textarea,
-select {
-  width: 100%;
+.jari-site * {
   box-sizing: border-box;
+}
 
-  padding: 12px 14px;
-  margin: 8px 0 16px;
 
-  background: #1e293b;
-  color: #f8fafc;
+/* ================================
+   MENU
+   ================================ */
 
-  border: 1px solid #475569;
-  border-radius: 10px;
+.jari-nav {
+  background: #5c0013;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+}
 
+.jari-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.jari-menu-button {
+  background: white;
+  color: #c8102e;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
   font-size: 15px;
-  outline: none;
-}
-
-input:focus,
-textarea:focus,
-select:focus {
-  border-color: #38bdf8;
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 
-/* Container */
-.container {
-  width: min(1100px, 90%);
-  margin: 0 auto;
-  padding: 40px 0;
+/* Dropdown */
+
+.jari-dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 7px;
+  min-width: 220px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  z-index: 100;
 }
 
+
+/* Wanneer het menu geopend is */
+
+.jari-dropdown-content.open {
+  display: block;
+}
+
+
+/* Links in het menu */
+
+.jari-dropdown-content a {
+  display: block;
+  padding: 13px 17px;
+  color: #c8102e;
+  background: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: left;
+}
+
+.jari-dropdown-content a:hover {
+  background: #ffe7eb;
+  color: #780018;
+}
+
+
+/* ================================
+   VOORPAGINA
+   ================================ */
+
+.jari-main {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.jari-title {
+  color: white;
+  font-size: 48px;
+  margin: 0;
+  text-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+}
+
+.jari-subtitle {
+  color: #ffe9ed;
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+
+/* ================================
+   TEKSTVAK
+   ================================ */
+
+.jari-card {
+  max-width: 680px;
+  margin: auto;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  border-top: 5px solid #650014;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  text-align: left;
+}
+
+.jari-card h2 {
+  color: #a50022;
+  margin-top: 0;
+  font-size: 28px;
+}
+
+.jari-card p {
+  color: #444;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   AFBEELDING
+   ================================ */
+
+.jari-photo {
+  width: 230px;
+  max-width: 80%;
+  height: auto;
+  border-radius: 12px;
+  border: 4px solid white;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  margin: 10px auto 35px;
+  display: block;
+}
+
+
+/* ================================
+   MOBIEL
+   ================================ */
+
+@media (max-width: 600px) {
+
+  .jari-title {
+    font-size: 36px;
+  }
+
+  .jari-main {
+    padding: 40px 15px;
+  }
+
+  .jari-card {
+    padding: 25px;
+  }
+
+}
+</style>
+}
