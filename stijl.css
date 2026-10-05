@@ -1,18 +1,40 @@
-
 /* ================================
    JARI LITMANEN - OPMAAK
    ================================ */
 
-.jari-site {
-  font-family: Arial, Helvetica, sans-serif;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #780018, #c8102e, #8b001c);
-  color: #222;
-  padding-bottom: 60px;
+* {
+    box-sizing: border-box;
 }
 
-.jari-site * {
-  box-sizing: border-box;
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ================================
+   ACHTERGROND
+   ================================ */
+
+.jari-site {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+
+    background:
+        radial-gradient(
+            circle at top right,
+            rgba(255,255,255,0.12),
+            transparent 30%
+        ),
+        linear-gradient(
+            135deg,
+            #780018 0%,
+            #c8102e 50%,
+            #8b001c 100%
+        );
+
+    color: #222;
+    padding-bottom: 60px;
 }
 
 
@@ -21,69 +43,90 @@
    ================================ */
 
 .jari-nav {
-  background: #5c0013;
-  padding: 16px;
-  text-align: center;
-  box-shadow: 0 3px 15px rgba(0,0,0,0.25);
+    background: #5c0013;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.25);
 }
 
 .jari-dropdown {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .jari-menu-button {
-  background: white;
-  color: #c8102e;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 15px;
-  font-weight: bold;
-  cursor: pointer;
+    background: white;
+    color: #c8102e;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.jari-menu-button:hover {
+    background: #ffe7eb;
 }
 
 
-/* Dropdown */
+/* ================================
+   DROPDOWN MENU
+   ================================ */
 
 .jari-dropdown-content {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  margin-top: 7px;
-  min-width: 220px;
-  background: white;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  z-index: 100;
+    display: none;
+
+    position: absolute;
+    top: 100%;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    margin-top: 7px;
+
+    min-width: 220px;
+
+    background: white;
+
+    border-radius: 8px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+    z-index: 100;
 }
 
 
-/* Wanneer het menu geopend is */
+/* Menu verschijnt wanneer je eroverheen gaat */
 
-.jari-dropdown-content.open {
-  display: block;
+.jari-dropdown:hover .jari-dropdown-content {
+    display: block;
 }
 
 
-/* Links in het menu */
+/* Links */
 
 .jari-dropdown-content a {
-  display: block;
-  padding: 13px 17px;
-  color: #c8102e;
-  background: white;
-  text-decoration: none;
-  font-weight: bold;
-  text-align: left;
+    display: block;
+
+    padding: 13px 17px;
+
+    color: #c8102e;
+    background: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+    text-align: left;
 }
 
 .jari-dropdown-content a:hover {
-  background: #ffe7eb;
-  color: #780018;
+    background: #ffe7eb;
+    color: #780018;
 }
 
 
@@ -92,25 +135,64 @@
    ================================ */
 
 .jari-main {
-  width: 90%;
-  max-width: 900px;
-  margin: auto;
-  padding: 60px 20px;
-  text-align: center;
+    width: 90%;
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    padding: 60px 20px;
+
+    text-align: center;
 }
+
+
+/* Nummer 10 */
+
+.jari-number {
+    display: inline-block;
+
+    color: white;
+
+    border: 2px solid rgba(255,255,255,0.7);
+
+    border-radius: 50%;
+
+    width: 55px;
+    height: 55px;
+
+    line-height: 51px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+/* Titel */
 
 .jari-title {
-  color: white;
-  font-size: 48px;
-  margin: auto;
-  text-shadow: 2px 3px 8px rgba(0,0,0,0.25);
+    margin: 0;
+
+    color: white;
+
+    font-size: 48px;
+
+    letter-spacing: 1px;
+
+    text-shadow: 2px 3px 8px rgba(0,0,0,0.25);
 }
 
+
+/* Ondertitel */
+
 .jari-subtitle {
-  color: #ffe9ed;
-  font-size: 18px;
-  margin-top: 10px;
-  margin-bottom: 35px;
+    color: #ffe9ed;
+
+    font-size: 18px;
+
+    margin-top: 10px;
+    margin-bottom: 35px;
 }
 
 
@@ -118,36 +200,56 @@
    TEKSTVAK
    ================================ */
 
-   .jari-card {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 25px 10px;
-  background: transparent;
-  border: none;
-  box-shadow: none;
-  text-align: center;
+.jari-card {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    padding: 25px 10px;
+
+    background: transparent;
+
+    border: none;
+
+    box-shadow: none;
+
+    text-align: center;
 }
+
 
 .jari-card h2 {
-  margin-top: 0;
-  color: white;
-  font-size: 28px;
-  margin-bottom: 15px;
+    margin-top: 0;
+
+    color: white;
+
+    font-size: 28px;
+
+    margin-bottom: 15px;
 }
+
 
 .jari-card p {
-  color: white;
-  font-size: 16px;
-  line-height: 1.8;
-  margin-bottom: 0;
+    color: white;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
 }
 
+
+/* Rode/witte lijn */
+
 .jari-line {
-  width: 60px;
-  height: 4px;
-  background: white;
-  margin: 0 auto 22px auto;
-  border-radius: 5px;
+    width: 60px;
+    height: 4px;
+
+    background: white;
+
+    margin: 0 auto 22px auto;
+
+    border-radius: 5px;
 }
 
 
@@ -156,33 +258,43 @@
    ================================ */
 
 .jari-photo {
-  width: 230px;
-  max-width: 80%;
-  height: auto;
-  border-radius: 12px;
-  border: 4px solid white;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-  margin: 10px auto 35px;
-  display: block;
+    width: 230px;
+    max-width: 80%;
+
+    height: auto;
+
+    border-radius: 12px;
+
+    border: 4px solid white;
+
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+    margin: 10px auto 35px;
+
+    display: block;
 }
 
 
 /* ================================
-   MOBIEL
+   MOBIELE VERSIE
    ================================ */
 
 @media (max-width: 600px) {
 
-  .jari-title {
-    font-size: 36px;
-  }
+    .jari-title {
+        font-size: 36px;
+    }
 
-  .jari-main {
-    padding: 40px 15px;
-  }
+    .jari-main {
+        padding: 40px 15px;
+    }
 
-  .jari-card {
-    padding: 25px;
-  }
+    .jari-card {
+        padding: 25px;
+    }
+
+    .jari-subtitle {
+        font-size: 16px;
+    }
 
 }

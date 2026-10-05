@@ -1,57 +1,77 @@
-<!DOCTYPE html> <!--dit is de homepage van mijn site-->
-<html> <!--dit is het html element-->
-    <head>
-   <title> Jari Litmanen</title>
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jari Litmanen</title>
+
+    <!-- Koppeling met CSS -->
+    <link rel="stylesheet" href="stijl.css">
 </head>
+
 <body>
-<div class="jari-site"> <style>  .jari-site { font-family: Arial, Helvetica, sans-serif; min-height: 100vh; background: radial-gradient(circle at top right, rgba(255,255,255,0.12), transparent 30%), linear-gradient(135deg, #8b001c 0%, #c8102e 50%, #780018 100%); color: #222; padding-bottom: 60px; } .jari-site * { box-sizing: border-box; } /* ================================ MENU ================================ */ .jari-nav { background: #650014; padding: 16px; text-align: center; box-shadow: 0 3px 15px rgba(0,0,0,0.25); } .jari-dropdown { position: relative; display: inline-block; } .jari-menu-button { border: 0; background: white; color: #b00024; padding: 11px 24px; border-radius: 8px; font-size: 15px; font-weight: bold; cursor: pointer; transition: 0.2s; } .jari-menu-button:hover { background: #ffe7eb; } /* Dropdown */ .jari-dropdown-content { display: none; position: absolute; top: 100%; left: 50%; transform: translateX(-50%); margin-top: 7px; min-width: 220px; background: white; border-radius: 9px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.3); z-index: 100; } /* DIT ZIJN DE ENIGE LINKS OP DE WEBSITE. Vervang de # door je eigen URL. */ .jari-dropdown-content a { display: block; padding: 13px 17px; color: #c8102e; background: white; text-decoration: none; font-weight: bold; text-align: left; transition: 0.2s; } .jari-dropdown-content a:hover { background: #ffe7eb; color: #780018; } .jari-dropdown:hover .jari-dropdown-content { display: block; } /* ================================ VOORPAGINA ================================ */ .jari-main { width: 90%; max-width: 900px; margin: 0 auto; padding: 55px 20px; text-align: center; } /* Kleine nummer 10 */ .jari-number { display: inline-block; color: white; border: 2px solid rgba(255,255,255,0.7); border-radius: 50%; width: 55px; height: 55px; line-height: 51px; font-size: 22px; font-weight: bold; margin-bottom: 15px; } .jari-title { margin: 0; color: white; font-size: 48px; letter-spacing: 1px; text-shadow: 2px 3px 8px rgba(0,0,0,0.25); } .jari-subtitle { color: #ffe9ed; font-size: 18px; margin-top: 10px; margin-bottom: 35px; } /* ================================ WITTE CONTENT KAART ================================ */ .jari-card { max-width: 680px; margin: 0 auto; padding: 35px; background: rgba(255,255,255,0.97); border-radius: 15px; box-shadow: 0 12px 35px rgba(0,0,0,0.25); border-top: 5px solid #650014; text-align: left; } .jari-card h2 { margin-top: 0; color: #a50022; font-size: 28px; margin-bottom: 15px; } .jari-card p { color: #444; font-size: 16px; line-height: 1.8; margin-bottom: 0; } /* ================================ EXTRA ACCENT ================================ */ .jari-line { width: 60px; height: 4px; background: #c8102e; margin: 0 0 22px 0; border-radius: 5px; } /* ================================ MOBIELE VERSIE ================================ */ @media (max-width: 600px) { .jari-main { width: 94%; padding: 40px 10px; } .jari-title { font-size: 36px; } .jari-subtitle { font-size: 16px; } .jari-card { padding: 25px; } } </style> <!-- ================================ MENU ================================ --> <nav class="jari-nav"> <div class="jari-dropdown">
+
+    <div class="jari-site">
+
+        <!-- MENU -->
+        <nav class="jari-nav">
+            <div class="jari-dropdown">
+
+                <button class="jari-menu-button">
+                    MENU ▼
+                </button>
+
+                <div class="jari-dropdown-content">
+                    <a href="index.html">Home</a>
+                    <a href="informatie.html">Over Jari</a>
+                    <a href="#">Carrière</a>
+                    <a href="binairstelsel.html">Mijn favoriete momenten</a>
+                </div>
+
+            </div>
+        </nav>
 
 
-  <button class="jari-menu-button">
-  MENU ▼
-</button>
+        <!-- VOORPAGINA -->
+        <main class="jari-main">
 
-<div class="jari-dropdown-content">
+            <div class="jari-number">10</div>
 
+            <h1 class="jari-title">
+                Jari Litmanen
+            </h1>
 
-  <a href="index.html">Home</a>
-  <a href="informatie.html">Over Jari</a>
-  <a href="#">Carrière</a>
-  <a href="binairstelsel.html">Mijn favoriete momenten</a>
-
-</div>
-
-
-</div>
-
-</nav> 
-<main class="jari-main"> <div class="jari-number"> 10 </div> <h1 class="jari-title"> Jari Litmanen </h1> <div class="jari-subtitle"> De Finse nummer 10 </div>  <section class="jari-card">
-<div class="jari-line"></div>
-
-<h2>
-  Over mij
-</h2>
-
-<!--
-  VERVANG DE TEKST HIERONDER
-  DOOR JE EIGEN TEKST.
--->
-<div>
-<p>
-  Mijn naam is <strong>[jouw naam]</strong> en ik heb deze website
-  gemaakt over Jari Litmanen. Ik vind voetbal erg interessant
-  en heb gekozen voor Litmanen omdat hij een bijzondere speler
-  en een echte voetballegende is.
-</p>
-  <br><br>
-<p>
-  Op deze website kun je meer informatie vinden over Jari,
-  zijn carrière en zijn mooiste momenten.
-</p>
-</div>
-</section> </main> </div>
+            <div class="jari-subtitle">
+                De Finse nummer 10
+            </div>
 
 
-    </body>
+            <!-- INHOUD -->
+            <section class="jari-card">
+
+                <div class="jari-line"></div>
+
+                <h2>
+                    Over mij
+                </h2>
+
+                <p>
+                    Mijn naam is <strong>[jouw naam]</strong> en ik heb deze
+                    website gemaakt over Jari Litmanen. Ik vind voetbal erg
+                    interessant en heb gekozen voor Litmanen omdat hij een
+                    bijzondere speler en een echte voetballegende is.
+                </p>
+
+                <p>
+                    Op deze website kun je meer informatie vinden over Jari,
+                    zijn carrière en zijn mooiste momenten.
+                </p>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
 </html>
