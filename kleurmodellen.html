@@ -39,67 +39,215 @@
 
             </div>
 
-        </nav>
+       <h1 style="color: #7c3aed;">Kleurmodellen</h1>
 
+  <h2>Wat zijn kleurmodellen?</h2>
 
-        <!-- ================================
-             HOOFDGEDEELTE
-             ================================ -->
+  <p>
+    Een kleurmodel is een manier waarop kleuren digitaal worden beschreven.
+    Computers kunnen kleuren niet gewoon "zien" zoals mensen dat doen.
+    Daarom worden kleuren opgeslagen als getallen.
+  </p>
 
-        <main class="jari-main">
+  <p>
+    Er bestaan verschillende kleurmodellen. Voor computers en digitale
+    schermen is vooral het <strong>RGB-kleurmodel</strong> belangrijk.
+    Voor drukwerk wordt vaak <strong>CMYK</strong> gebruikt.
+  </p>
 
-            <div class="jari-number">
-                10
-            </div>
+  <h2>RGB</h2>
 
-            <h1 class="jari-title">
-                Jari Litmanen
-            </h1>
+  <p>
+    RGB staat voor <strong>Rood (Red), Groen (Green)</strong> en
+    <strong>Blauw (Blue)</strong>. Met deze drie kleuren kan een computer
+    heel veel verschillende kleuren maken.
+  </p>
 
-            <div class="jari-subtitle">
-                De Finse nummer 10
-            </div>
+  <p>
+    Iedere kleur krijgt een waarde. Bij RGB ligt deze waarde meestal tussen
+    <strong>0 en 255</strong>.
+  </p>
 
+  <div style="background-color: white; padding: 15px; border-radius: 8px; margin: 20px 0;">
 
-            <!-- ================================
-                 CARRIÈRE
-                 ================================ -->
+    <p>
+      <strong>Rood:</strong>
+      <span style="color: rgb(255,0,0);">RGB(255, 0, 0)</span>
+    </p>
 
-            <section class="jari-card">
+    <p>
+      <strong>Groen:</strong>
+      <span style="color: rgb(0,128,0);">RGB(0, 255, 0)</span>
+    </p>
 
-                <div class="jari-line"></div>
+    <p>
+      <strong>Blauw:</strong>
+      <span style="color: rgb(0,0,255);">RGB(0, 0, 255)</span>
+    </p>
 
-                <h2>
-                    Uitleg over kleurmodellen
-                </h2>
+    <p>
+      <strong>Wit:</strong>
+      RGB(255, 255, 255)
+    </p>
 
-                <p>
-                    Kleurmodellen uitleg
-                </p>
+    <p>
+      <strong>Zwart:</strong>
+      RGB(0, 0, 0)
+    </p>
 
-                <p>
-                    plaatje
-                </p>
+  </div>
 
-                <p>
-                  nog meer uitleg
-                </p>
+  <h2>Hoe werkt RGB?</h2>
 
-                <p>
-                    jdjjf
-                </p>
-                
+  <p>
+    Stel dat we de kleur <strong>RGB(255, 100, 50)</strong> hebben.
+    Dit betekent:
+  </p>
 
-                <!-- AFBEELDING -->
+  <ul>
+    <li>Rood heeft een waarde van 255.</li>
+    <li>Groen heeft een waarde van 100.</li>
+    <li>Blauw heeft een waarde van 50.</li>
+  </ul>
 
-                <img
-                    src="images.jpg"
-                    alt="Jari Litmanen"
-                    class="jari-photo"
-                >
+  <p>
+    De computer combineert deze drie waarden en maakt daar één kleur van.
+    Door de waarden te veranderen, kan de computer miljoenen verschillende
+    kleuren maken.
+  </p>
 
-            </section>
+  <h2>HEX-kleuren</h2>
 
+  <p>
+    Op websites wordt vaak een andere manier gebruikt om RGB-kleuren te
+    schrijven: een <strong>HEX-code</strong>.
+  </p>
+
+  <p>
+    Een HEX-kleur begint met een <strong>#</strong> en bestaat uit zes
+    tekens. Bijvoorbeeld:
+  </p>
+
+  <div style="background-color: #2563eb; color: white; padding: 20px; border-radius: 8px; text-align: center; font-size: 20px;">
+    #2563EB
+  </div>
+
+  <p>
+    Een HEX-code bestaat uit drie delen:
+  </p>
+
+  <ul>
+    <li>De eerste twee tekens geven de hoeveelheid rood aan.</li>
+    <li>De volgende twee tekens geven de hoeveelheid groen aan.</li>
+    <li>De laatste twee tekens geven de hoeveelheid blauw aan.</li>
+  </ul>
+
+  <p>
+    HEX gebruikt het <strong>hexadecimale stelsel</strong>. Hierbij worden
+    de cijfers 0 t/m 9 en de letters A t/m F gebruikt.
+  </p>
+
+  <h2>CMYK</h2>
+
+  <p>
+    CMYK wordt vooral gebruikt voor <strong>printen</strong>. CMYK staat voor:
+  </p>
+
+  <ul>
+    <li><strong>C</strong> = Cyaan</li>
+    <li><strong>M</strong> = Magenta</li>
+    <li><strong>Y</strong> = Yellow (Geel)</li>
+    <li><strong>K</strong> = Key (Zwart)</li>
+  </ul>
+
+  <p>
+    Bij RGB worden kleuren gemaakt door licht toe te voegen. Bij CMYK wordt
+    juist gewerkt met inkt die licht absorbeert. Daarom is RGB vooral geschikt
+    voor schermen en CMYK vooral geschikt voor drukwerk.
+  </p>
+
+  <div style="display: flex; gap: 10px; flex-wrap: wrap; margin: 20px 0;">
+
+    <div style="background-color: #00ffff; padding: 30px; flex: 1; min-width: 120px; text-align: center;">
+      <strong>Cyaan</strong>
+    </div>
+
+    <div style="background-color: #ff00ff; padding: 30px; flex: 1; min-width: 120px; text-align: center;">
+      <strong>Magenta</strong>
+    </div>
+
+    <div style="background-color: #ffff00; padding: 30px; flex: 1; min-width: 120px; text-align: center;">
+      <strong>Geel</strong>
+    </div>
+
+    <div style="background-color: #000000; color: white; padding: 30px; flex: 1; min-width: 120px; text-align: center;">
+      <strong>Zwart</strong>
+    </div>
+
+  </div>
+
+  <h2>RGB en CMYK vergeleken</h2>
+
+  <table style="border-collapse: collapse; width: 100%; background-color: white; margin-top: 20px;">
+    <tr>
+      <th style="border: 1px solid #ccc; padding: 10px;">RGB</th>
+      <th style="border: 1px solid #ccc; padding: 10px;">CMYK</th>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 10px;">
+        Rood, Groen en Blauw
+      </td>
+      <td style="border: 1px solid #ccc; padding: 10px;">
+        Cyaan, Magenta, Geel en Zwart
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 10px;">
+        Vooral voor schermen
+      </td>
+      <td style="border: 1px solid #ccc; padding: 10px;">
+        Vooral voor drukwerk
+      </td>
+    </tr>
+
+    <tr>
+      <td style="border: 1px solid #ccc; padding: 10px;">
+        Werkt met licht
+      </td>
+      <td style="border: 1px solid #ccc; padding: 10px;">
+        Werkt met inkt
+      </td>
+    </tr>
+  </table>
+
+  <h2>Waarom zijn kleurmodellen belangrijk?</h2>
+
+  <p>
+    Kleurmodellen zorgen ervoor dat computers kleuren op een vaste manier
+    kunnen opslaan, verwerken en weergeven. Wanneer je bijvoorbeeld een
+    afbeelding op je computer bekijkt, worden de kleuren van die afbeelding
+    opgeslagen als digitale waarden.
+  </p>
+
+  <p>
+    Een computer kan daardoor bijvoorbeeld onthouden dat een pixel
+    <strong>RGB(255, 0, 0)</strong> is. De computer weet dan dat deze pixel
+    volledig rood moet worden weergegeven.
+  </p>
+
+  <h2>Kort samengevat</h2>
+
+  <ul>
+    <li><strong>RGB</strong> gebruikt rood, groen en blauw en wordt vooral gebruikt voor schermen.</li>
+    <li><strong>HEX</strong> is een compacte manier om RGB-kleuren op websites te noteren.</li>
+    <li><strong>CMYK</strong> gebruikt cyaan, magenta, geel en zwart en wordt vooral gebruikt voor drukwerk.</li>
+    <li>Computers slaan kleuren op als <strong>getallen</strong>.</li>
+    <li>Door verschillende waarden te combineren kunnen heel veel verschillende kleuren worden gemaakt.</li>
+  </ul>
+
+</section>
         </main>
 
     </div>
