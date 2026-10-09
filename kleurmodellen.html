@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html lang="nl">
-
-<head>
-    <meta charset="utf-8">
+<!DOCTYPE html> <!--dit is de homepage-->
+<html> <!--dit is het html element-->
+    <head>
+     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jari Litmanen</title>
 
-    <title>Jari Litmanen - kleurmodellen </title>
-
+    <!-- Koppeling met CSS -->
     <link rel="stylesheet" href="stijl.css">
 </head>
 
@@ -14,117 +13,153 @@
 
     <div class="jari-site">
 
-        <!-- ================================
-             MENU
-             ================================ -->
+    <!-- MENU -->
+    <nav class="jari-nav">
 
-        <nav class="jari-nav">
+        <div class="jari-dropdown">
 
-            <div class="jari-dropdown">
+            <button class="jari-menu-button">
+                MENU ▼
+            </button>
 
-                <button class="jari-menu-button">
-                    MENU ▼
-                </button>
+            <div class="jari-dropdown-content">
 
-                <div class="jari-dropdown-content">
-
-                    <a href="index.html">Home</a>
+                  <a href="index.html">Home</a>
                     <a href="informatie.html">Over Jari</a>
                     <a href="carrière.html">Carrière</a>
                     <a href="binairstelsel.html">binair stelsel</a>
                     <a href="kleurmodellen.html">kleurmodellen</a>
                     <a href="ai.html"> Ai </a>
 
-                </div>
-
             </div>
 
-       <h1 style="color: #f1eded;">Kleurmodellen</h1>
+        </div>
 
-  <h2>Wat zijn kleurmodellen?</h2>
-
-  <p>
-    Een kleurmodel is een manier waarop kleuren digitaal worden beschreven.
-    Computers kunnen kleuren niet gewoon "zien" zoals mensen dat doen.
-    Daarom worden kleuren opgeslagen als getallen.
-  </p>
-
-  <p>
-    Er bestaan verschillende kleurmodellen. Voor computers en digitale
-    schermen is vooral het <strong>RGB-kleurmodel</strong> belangrijk.
-    Voor drukwerk wordt vaak <strong>CMYK</strong> gebruikt.
-  </p>
-
-  <h2>RGB</h2>
-
-  <p>
-    RGB staat voor <strong>Rood (Red), Groen (Green)</strong> en
-    <strong>Blauw (Blue)</strong>. Met deze drie kleuren kan een computer
-    heel veel verschillende kleuren maken.
-  </p>
-
-  <p>
-    Iedere kleur krijgt een waarde. Bij RGB ligt deze waarde meestal tussen
-    <strong>0 en 255</strong>.
-  </p>
-
-    <p>
-      <strong>Rood:</strong>
-      <span style="color: rgb(255,0,0);">RGB(255, 0, 0)</span>
-    </p>
-
-    <p>
-      <strong>Groen:</strong>
-      <span style="color: rgb(0,128,0);">RGB(0, 255, 0)</span>
-    </p>
-
-    <p>
-      <strong>Blauw:</strong>
-      <span style="color: rgb(0,0,255);">RGB(0, 0, 255)</span>
-    </p>
-
-    <p>
-      <strong>Wit:</strong>
-      RGB(255, 255, 255)
-    </p>
-
-    <p>
-      <strong>Zwart:</strong>
-      RGB(0, 0, 0)
-    </p>
-
-  </div>
-
-  <h2>Hoe werkt RGB?</h2>
-
-  <p>
-    Stel dat we de kleur <strong>RGB(255, 100, 50)</strong> hebben.
-    Dit betekent:
-  </p>
-
-  <ul>
-    <li>Rood heeft een waarde van 255.</li>
-    <li>Groen heeft een waarde van 100.</li>
-    <li>Blauw heeft een waarde van 50.</li>
-  </ul>
-
-  <p>
-    De computer combineert deze drie waarden en maakt daar één kleur van.
-    Door de waarden te veranderen, kan de computer miljoenen verschillende
-    kleuren maken.
-  </p>
-
- <img src="kleurmodellen.jpg" alt="kleurmodellen">
+    </nav>
 
 
+    <!-- HOOFDGEDEELTE -->
 
-</section>
-        </main>
+    <main class="jari-main">
 
-    </div>
+        <div class="jari-number">
+            10
+        </div>
 
-</body>
+        <h1 class="jari-title">
+            Jari Litmanen
+        </h1>
 
+        <div class="jari-subtitle">
+            Informatie over de Finse voetballegende
+        </div>
+
+
+        <!-- INFORMATIE -->
+
+        <section class="jari-card">
+
+            <div class="jari-line"></div>
+
+      <h2>Wat zijn kleurmodellen?</h2>
+
+
+ <p>
+   Een kleurmodel is een manier waarop kleuren digitaal worden beschreven.
+   Computers kunnen kleuren niet gewoon "zien" zoals mensen dat doen.
+   Daarom worden kleuren opgeslagen als getallen.
+ </p>
+
+
+ <p>
+   Er bestaan verschillende kleurmodellen. Voor computers en digitale
+   schermen is vooral het <strong>RGB-kleurmodel</strong> belangrijk.
+   Voor drukwerk wordt vaak <strong>CMYK</strong> gebruikt.
+ </p>
+
+
+ <h2>RGB</h2>
+
+
+ <p>
+   RGB staat voor <strong>Rood (Red), Groen (Green)</strong> en
+   <strong>Blauw (Blue)</strong>. Met deze drie kleuren kan een computer
+   heel veel verschillende kleuren maken.
+ </p>
+
+
+ <p>
+   Iedere kleur krijgt een waarde. Bij RGB ligt deze waarde meestal tussen
+   <strong>0 en 255</strong>.
+ </p>
+
+
+   <p>
+     <strong>Rood:</strong>
+     <span style="color: rgb(255,0,0);">RGB(255, 0, 0)</span>
+   </p>
+
+
+   <p>
+     <strong>Groen:</strong>
+     <span style="color: rgb(0,128,0);">RGB(0, 255, 0)</span>
+   </p>
+
+
+   <p>
+     <strong>Blauw:</strong>
+     <span style="color: rgb(0,0,255);">RGB(0, 0, 255)</span>
+   </p>
+
+
+   <p>
+     <strong>Wit:</strong>
+     RGB(255, 255, 255)
+   </p>
+
+
+   <p>
+     <strong>Zwart:</strong>
+     RGB(0, 0, 0)
+   </p>
+
+
+ </div>
+
+
+ <h2>Hoe werkt RGB?</h2>
+
+
+ <p>
+   Stel dat we de kleur <strong>RGB(255, 100, 50)</strong> hebben.
+   Dit betekent:
+ </p>
+
+
+ <ul>
+   <li>Rood heeft een waarde van 255.</li>
+   <li>Groen heeft een waarde van 100.</li>
+   <li>Blauw heeft een waarde van 50.</li>
+ </ul>
+
+
+ <p>
+   De computer combineert deze drie waarden en maakt daar één kleur van.
+   Door de waarden te veranderen, kan de computer miljoenen verschillende
+   kleuren maken.
+ </p>
+
+
+<img src="kleurmodellen.jpg" alt="kleurmodellen">
+
+
+        </section>
+
+    </main>
+
+</div>
+
+</body> 
 </html>
 
 
