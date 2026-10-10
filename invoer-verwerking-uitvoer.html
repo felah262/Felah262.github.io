@@ -45,88 +45,164 @@
  <link rel="stylesheet" href="stijl.css">
 
 
-    <main class="jari-main">
-
-  
-
-        <h1 class="jari-title">
-            Binaire stelsel
-        </h1>
-
-        
-
-        <!-- INFORMATIE -->
-
-        <section class="jari-card">
-
-            <div class="jari-line"></div>
-
-
- <link rel="stylesheet" href="stijl.css">
-
     
-<p>
-  Het binaire stelsel is een getallenstelsel dat alleen de cijfers
-  <strong>0</strong> en <strong>1</strong> gebruikt.
-  Computers werken hiermee omdat elektronische schakelingen twee toestanden
-  kunnen hebben: aan of uit.
-</p>
+<section class="ivo-sectie">
+    <h1>Invoer - Verwerking - Uitvoer</h1>
 
- <img
-                src="binair 0 en 1.jpg"
-                alt="Jari Litmanen in zijn tijd bij Ajax"
-                class="jari-photo"
-            >
+    <p>
+        Een computer werkt volgens het principe invoer, verwerking en uitvoer.
+        Dit betekent dat een computer gegevens ontvangt, deze gegevens verwerkt
+        en daarna een resultaat laat zien.
+    </p>
 
-<h2>Hoe werkt het?</h2>
+    <div class="ivo-kaart">
+        <h2>1. Invoer</h2>
+        <p>
+            Invoer is de informatie die je aan een computer geeft.
+            Dit kan bijvoorbeeld met een toetsenbord, muis, microfoon
+            of touchscreen. Wanneer je een som intypt op een rekenmachine,
+            is de som de invoer.
+        </p>
+    </div>
 
+    <div class="ivo-kaart">
+        <h2>2. Verwerking</h2>
+        <p>
+            Tijdens de verwerking voert de computer berekeningen uit
+            of bewerkt hij de ingevoerde gegevens. De processor voert
+            instructies uit om de invoer om te zetten in een resultaat.
+            Bij een rekenmachine wordt bijvoorbeeld de som uitgerekend.
+        </p>
+    </div>
 
-<p>
-  Elke plek in een binair getal heeft een waarde die een macht van 2 is.
-  Van rechts naar links zijn dat bijvoorbeeld:
-  <strong>1, 2, 4, 8, 16</strong>.
-</p>
+    <div class="ivo-kaart">
+        <h2>3. Uitvoer</h2>
+        <p>
+            Uitvoer is het resultaat dat de computer teruggeeft.
+            Dit kan op een beeldscherm verschijnen, via luidsprekers
+            worden afgespeeld of met een printer worden afgedrukt.
+            Bij de rekenmachine is het antwoord op de som de uitvoer.
+        </p>
+    </div>
 
+    <h2>Voorbeeld: een rekenmachine</h2>
 
+    <div class="ivo-stappen">
+        <div class="ivo-stap">
+            <span>⌨️</span>
+            <h3>Invoer</h3>
+            <p>Je typt 5 + 3 in.</p>
+        </div>
 
+        <div class="ivo-pijl">→</div>
 
-<p>
-  Bijvoorbeeld:
-  <strong>1011</strong> betekent:
-</p>
+        <div class="ivo-stap">
+            <span>⚙️</span>
+            <h3>Verwerking</h3>
+            <p>De computer rekent de som uit.</p>
+        </div>
 
+        <div class="ivo-pijl">→</div>
 
+        <div class="ivo-stap">
+            <span>🖥️</span>
+            <h3>Uitvoer</h3>
+            <p>Het antwoord 8 verschijnt.</p>
+        </div>
+    </div>
 
+    <p class="ivo-conclusie">
+        Conclusie: een computer ontvangt gegevens, verwerkt deze
+        en geeft vervolgens een resultaat. Dit principe wordt
+        gebruikt bij bijna alle digitale apparaten.
+    </p>
+</section>
 
-<p>
-  8 + 0 + 2 + 1 = <strong>11</strong>
-</p>
+<style>
+.ivo-sectie {
+    max-width: 950px;
+    margin: 50px auto;
+    padding: 25px;
+    color: white;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    line-height: 1.8;
+}
 
+.ivo-sectie h1 {
+    font-size: 34px;
+    margin-bottom: 25px;
+}
 
+.ivo-sectie h2 {
+    font-size: 24px;
+    margin-top: 10px;
+}
 
+.ivo-sectie p {
+    font-size: 17px;
+}
 
-<p>
-  Dus het binaire getal <strong>1011</strong> is hetzelfde als het gewone
-  getal <strong>11</strong>.
-</p>
+.ivo-kaart {
+    margin: 25px 0;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+}
 
+.ivo-stappen {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+}
 
+.ivo-stap {
+    flex: 1;
+    padding: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+}
 
+.ivo-stap span {
+    font-size: 32px;
+}
 
- <!--spelletje om te oefenen-->
-          <h2> Oefenen met binair rekenen</h2>
+.ivo-stap h3 {
+    margin-bottom: 5px;
+}
 
+.ivo-pijl {
+    align-self: center;
+    font-size: 28px;
+}
 
+.ivo-conclusie {
+    margin-top: 30px;
+    font-weight: bold;
+}
 
+@media (max-width: 600px) {
+    .ivo-sectie {
+        padding: 15px;
+    }
 
-          <p>
-          <iframe src="https://games.penjee.com/binary-bonanza/game.php" width="700" height="500" frameborder="no" scrolling="no" ></iframe>
-          </p>
-    
+    .ivo-sectie h1 {
+        font-size: 27px;
+    }
 
-        </section>
+    .ivo-stappen {
+        flex-direction: column;
+    }
 
-    </main>
+    .ivo-pijl {
+        transform: rotate(90deg);
+    }
+}
+</style>
+
 
 </div>
 
